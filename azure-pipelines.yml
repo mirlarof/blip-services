@@ -22,9 +22,6 @@ extends:
     to: semantic-release
     npmCmds:
     - npm cache clean -f
-    - npm i -g npm@^2.0.0
     - npm prune
     - npm install
-    - npm i -g typings
-    - typings install
     - npm run build
