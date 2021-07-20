@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": false,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": ["typings", "./node_modules/@types"],
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ]
+    },
+    "exclude": ["node_modules", "dist"]
+}
