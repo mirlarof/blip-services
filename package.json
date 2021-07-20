@@ -11,9 +11,17 @@
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
     "semantic-release": "semantic-release"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takenet/blip-services.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takenet/blip-services/issues"
+  },
+  "homepage": "https://github.com/takenet/blip-services#readme",
   "jest": {
     "verbose": true
   },
@@ -37,9 +45,5 @@
     "lime-transport-websocket": "^2.0.3",
     "semaphore-async-await": "^1.5.1",
     "uuid": "^8.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/takenet/blip-services.git"
   }
 }
