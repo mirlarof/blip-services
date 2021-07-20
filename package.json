@@ -40,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/takenet/blip-toolkit.git"
+    "url": "git+https://github.com/takenet/blip-services.git"
   }
 }
