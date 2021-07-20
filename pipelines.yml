@@ -1,3 +1,8 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
 trigger:
 - master
 
@@ -12,8 +17,8 @@ resources:
   - repository: templates
     type: git
     name: Operações/template-take-blip
-    ref: refs/tags/v1.3
-    
+    ref: refs/tags/v1.2.3
+
 extends:
   template: template-pipeline.yml@templates    
   parameters:    
@@ -21,6 +26,8 @@ extends:
     type: javascript
     to: semantic-release
     npmCmds:
-    - npm install
+    - npm cache clean -f
+    - npm i -g npm@^2.0.0
     - npm prune
+    - npm install
     - npm run build
