@@ -21,8 +21,6 @@ extends:
     type: javascript
     to: semantic-release
     npmCmds:
-    - npm cache clean -f
-    - npm i -g npm@^2.0.0
-    - npm prune
     - npm install
+    - npm prune
     - npm run build
